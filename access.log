@@ -1,0 +1,7 @@
+sample_logs = """127.0.0.1 - - [10/Oct/2023:13:55:36] "GET /index.html HTTP/1.1" 200 2326
+192.168.1.1 - - [10/Oct/2023:14:01:22] "POST /login HTTP/1.1" 401 721
+10.0.0.2 - - [10/Oct/2023:14:05:10] "GET /home HTTP/1.1" 200 1024
+"""
+
+with open("access.log", "w") as f:
+    f.write(sample_logs)
